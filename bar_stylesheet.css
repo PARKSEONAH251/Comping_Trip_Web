@@ -1,0 +1,120 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 버튼이 한 줄에 맞지 않을 경우 다음 줄로 감싸줍니다 */
+    height: -30vh; /* 예시로 컨테이너 높이를 화면 전체로 설정 */
+}
+
+.menu:hover,
+.menu.active{
+    background-color: rgb(255, 245, 245);
+}
+
+.menu1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px; /* 버튼 간격을 주기 위해 여백 추가 */
+    background-color:rgba(255, 255, 255, 0.5);;
+    /* 필요에 따라 더 많은 스타일 추가 가능 */
+}
+
+
+.icon1{
+    width: 20px;
+    height: 20px;
+}
+
+
+.menu2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px; /* 버튼 간격을 주기 위해 여백 추가 */
+    background-color:rgba(255, 255, 255, 0.5);;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.icon2{
+    width: 25x;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.menu3 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px; /* 버튼 간격을 주기 위해 여백 추가 */
+    background-color:rgba(255, 255, 255, 0.5);;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.icon3{
+    width: 25px;
+    height: 30px;
+    margin-right:  5px;
+}
+
+.menu4{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px; /* 버튼 간격을 주기 위해 여백 추가 */
+    background-color:rgba(255, 255, 255, 0.5);;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.icon4{
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.menu5{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px; /* 버튼 간격을 주기 위해 여백 추가 */
+    background-color:rgba(255, 255, 255, 0.5);;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.icon5{
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+}

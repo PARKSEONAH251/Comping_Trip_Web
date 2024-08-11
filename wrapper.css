@@ -1,0 +1,152 @@
+/* Import Google Font - Poppins */
+/* google font - Poppins 가져오기 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* 젠체 요소에 대한 기본 스타일 설정 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/* 텍스트 선택시 스타일 */
+::selection{
+  color: #fff;
+}
+
+/* 래퍼 컨테이너 스타일 */
+.wrapper {
+  width: 250px;
+  margin-left: -550px;
+  margin-top: 50px;
+  position: relative; /* 추가 */
+}
+
+/* 선택 버튼과 리스트 아이템 공통 스타일  */
+.select-btn, li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 메인선택 버튼 스타일 */
+.select-btn{
+  height: 55px;
+  padding: 0 20px;
+  font-size: 15px;
+  background: #fff;
+  border-radius: 7px;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* 선택 버튼 내 아이콘 스타일 */
+.select-btn i{
+  font-size: 31px;
+  transition: transform 0.3s linear;
+}
+
+/* 활성화 시 아이콘 회전 */
+.wrapper.active .select-btn i{
+  transform: rotate(-180deg);
+}
+
+/* 콘텐츠 영역 스타일 */
+.content {
+  display: none;
+  padding: 20px;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+  position: absolute; /* 절대 위치 설정 */
+  top: 100%; /* 선택 버튼 바로 아래에 위치 */
+  left: 0; 
+  width: 100%;
+  height: 200px;
+  z-index: 1; /* 다른 요소 위에 표시 */
+}
+
+/* 활성화 시 콘텐츠 표시 */
+.wrapper.active .content{
+  display: block;
+  margin-top: 15px;
+}
+
+/* 검색 영역 스타일 */
+.content .search{
+  position: relative;
+}
+
+/* 검색 아이콘 스타일 */
+.search i{
+  top: 50%;
+  left: 15px;
+  color: #999;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+/* 검색 입력 필드 스타일 */
+.search input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0 20px 0 43px;
+  border: 1px solid #B3B3B3;
+}
+
+/* 검색 입력 필드 플레이스홀더 스타일 */
+.search input:focus{
+  padding-left: 42px;
+}
+
+/* 옵션 리스트 영역 스타일 */
+.search input::placeholder{
+  color: #bfbfbf;
+}
+
+/* 스크롤바 스타일 (webkit 브라우저용) */
+.content .options{
+  margin-top: 10px;
+  height: 120px;
+  overflow-y: auto;
+  padding-right: 7px;
+}
+
+
+.options::-webkit-scrollbar{
+  width: 7px;
+}
+
+.options::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
+
+/* 옵션 리스트 아이템 스타일 */
+.options li{
+  height: 50px;
+  padding: 0 13px;
+  font-size: 15px;
+}
+
+/* 옵션 리스트 아이템 호버 및 선택 시 스타일 */
+.options li:hover, li.selected{
+  border-radius: 5px;
+  background: #f2f2f2;
+}

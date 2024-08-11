@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comping trip Entertainment</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bar_stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="wrapper.css">
+    <link rel="stylesheet" href="wrapper1.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="HOME_language.js"></script>
+
+</head>
+<body>
+    <header id="main-header">
+        <div class="header">
+            <div class="logo-container">
+                <a href="/ko/"></a>
+                <button class="logo-button"><img src="Image/logo.png" style=" width: 200px;"></button>
+            </div>
+            <div class="singin">
+                <input class="singin-Button" type="button" value="Sing in">
+            </div>
+            <div class="singup">
+                <input class="singup-Button" type="button" value="Sing up">
+            </div>
+    </header>
+    <nav id="main-navigation">
+        <div class="left-navi">
+            <ul class="outer-menu">
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Company</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Flight</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Attractions & Tours</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Camping Cars</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Reservation Confirmation</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Service Center</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Mypage</a>
+                </li>
+            </ul>
+        </div>
+        <div class="language-select">
+            <button class="language-button" data-lang="en"><img src="Image/usa-flag.png" alt="English" style="margin-left: auto;"></button>
+            <button class="language-button" data-lang="ko"><img src="Image/korea-flag.png" alt="한국어"></button>
+            <button class="language-button" data-lang="ch"><img src="Image/china-flag.png" alt="中文"></button>
+            <button class="language-button" data-lang="ja"><img src="Image/japan-flag.png" alt="日本語"></button>
+        </div>
+    </nav>
+    <div class="main-image">
+        <img class="main_body" src="Image/adventure-1850178_1920.jpg" alt="Adventure">
+        <h1 class="main_text">Your Camping Trip Start Here</h1>
+        <div class="rectangle01">
+            <div class="button-container">
+                <button class="menu menu1"><img src="Icon_image/airliner_1636.png" class="icon1">  Flight</button>
+                <button class="menu menu2"><img src="Icon_image/tent_208379.png" class="icon2"> Campsite</button>
+                <button class="menu menu3"><img src="Icon_image/caravan_6629826.png" class="icon3">Camping Car</button>
+                <button class="menu menu4"><img src="Icon_image/ferris-wheel_8707839.png" class="icon4">Attractions & Tours</button>
+                <button class="menu menu5"><img src="Icon_image/luggage_9575812.png" class="icon5">Package Products</button>
+            </div>
+        </div>
+        <div class="rectangle02">
+            <div class="trip-option">
+                <div class="Trip">
+                    <div class="select-wrapper">
+                        <img src="Icon_image/airliner_1636.png" alt="아이콘" class="select-icon">
+                        <select name="Round-trip" id="trip-select">
+                            <option value="Round-trip">Round-trip</option>
+                            <option value="One-way">One-way</option>
+                            <option value="Multi-city">Multi-city</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Adult">
+                    <div class="select-wrapper1">
+                        <img src="Icon_image/user_1077114.png" alt="아이콘1" class="select-icon1">
+                        <select name="Adult" id="Adult-select">
+                            <option value="Adult">Adult</option>
+                            <option value="Children">Children</option>
+                            <option value="Infants on lap">Infants on lap</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Economy">
+                    <div class="select-wrapper2">
+                        <img src="Icon_image/rocking-chair_7925049.png" alt="아이콘2" class="select-icon2">
+                        <select name="Economy" id="Economy-select">
+                            <option value="Economy">Economy</option>
+                            <option value="Preminum Economy">Preminum Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First">First</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 첫 번째 드롭다운 메뉴 -->
+                <div class="wrapper">
+                    <div class="select-btn">
+                        <span>Leaving from</span>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                    <!-- 검색창 -->
+                    <div class="content">
+                        <div class="search">
+                            <i class="uil uil-search"></i>
+                            <input spellcheck="false" type="text" placeholder="search">
+                        </div>
+                        <ul class="options">
+                        </ul>
+                    </div>
+                </div>
+                <div class="Trip-image">
+                    <img src="Icon_image/recurrent_16975453.png" style="width: 30px; height: 30px;">
+                </div>
+                <!-- 두 번째 드롭다운 메뉴 -->
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-select-btn">
+                        <span>coming from</span>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                    <!-- 검색창 -->
+                    <div class="dropdown-content">
+                        <div class="dropdown-search">
+                            <i class="uil uil-search"></i>
+                            <input spellcheck="false" type="text" placeholder="search">
+                        </div>
+                        <ul class="dropdown-options">
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    
+    <script src="script1.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
