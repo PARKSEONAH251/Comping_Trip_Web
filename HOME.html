@@ -38,25 +38,25 @@
         <div class="left-navi">
             <ul class="outer-menu">
                 <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Company</a>
+                    <a href="#" class="outer-menu-link spread-underline">Home</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Tour</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Cruise</a>
+                </li>
+                <li class="outer-menu-item">
+                    <a href="#" class="outer-menu-link spread-underline">Pages</a>
                 </li>
                 <li class="outer-menu-item">
                     <a href="#" class="outer-menu-link spread-underline">Flight</a>
                 </li>
                 <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Attractions & Tours</a>
+                    <a href="#" class="outer-menu-link spread-underline">Hotel</a>
                 </li>
                 <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Camping Cars</a>
-                </li>
-                <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Reservation Confirmation</a>
-                </li>
-                <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Service Center</a>
-                </li>
-                <li class="outer-menu-item">
-                    <a href="#" class="outer-menu-link spread-underline">Mypage</a>
+                    <a href="#" class="outer-menu-link spread-underline">Car</a>
                 </li>
             </ul>
         </div>
@@ -67,76 +67,5 @@
             <button class="language-button" data-lang="ja"><img src="Image/japan-flag.png" alt="日本語"></button>
         </div>
     </nav>
-    <div class="main-image">
-        <img class="main_body" src="Image/adventure-1850178_1920.jpg" alt="Adventure">
-        <h1 class="main_text">Your Camping Trip Start Here</h1>
-        <div class="rectangle01">
-            <div class="button-container">
-                <button class="menu menu1"><img src="Icon_image/airliner_1636.png" class="icon1">  Flight</button>
-                <button class="menu menu2"><img src="Icon_image/tent_208379.png" class="icon2"> Campsite</button>
-                <button class="menu menu3"><img src="Icon_image/caravan_6629826.png" class="icon3">Camping Car</button>
-                <button class="menu menu4"><img src="Icon_image/ferris-wheel_8707839.png" class="icon4">Attractions & Tours</button>
-                <button class="menu menu5"><img src="Icon_image/luggage_9575812.png" class="icon5">Package Products</button>
-            </div>
-        </div>
-        <div class="rectangle02">
-            <div class="trip-option">
-                <div class="Trip">
-                    <div class="select-wrapper">
-                        <img src="Icon_image/airliner_1636.png" alt="아이콘" class="select-icon">
-                        <select name="Round-trip" id="trip-select">
-                            <option value="Round-trip">Round-trip</option>
-                            <option value="One-way">One-way</option>
-                            <option value="Multi-city">Multi-city</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="Adult">
-                    <div class="select-wrapper1">
-                        <img src="Icon_image/user_1077114.png" alt="아이콘1" class="select-icon1">
-                        <select name="Adult" id="Adult-select">
-                            <option value="Adult">Adult</option>
-                            <option value="Children">Children</option>
-                            <option value="Infants on lap">Infants on lap</option>
-                        </select>
-                    </div>
-                    <!-- <label for="passengers">Number of Passengers</label> -->
-                    <div class="passenger-controls">
-                        <button type="button" onclick="changePassengerCount(-1)">-</button>
-                        <input type="number" id="passenger-count" class="passenger-count" name="passengers" value="1" min="1" max="100" readonly>
-                        <button type="button" onclick="changePassengerCount(1)">+</button>
-                    </div>
-                </div>
-                <div class="Economy">
-                    <div class="select-wrapper2">
-                        <img src="Icon_image/rocking-chair_7925049.png" alt="아이콘2" class="select-icon2">
-                        <select name="Economy" id="Economy-select">
-                            <option value="Economy">Economy</option>
-                            <option value="Preminum Economy">Preminum Economy</option>
-                            <option value="Business">Business</option>
-                            <option value="First">First</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <script src="main.js"></script>
-    
-    <script>
-        function changePassengerCount(amount) {
-            const passengerCountInput = document.getElementById('passenger-count');
-            let currentCount = parseInt(passengerCountInput.value);
-            currentCount += amount;
-
-            // Ensure the count is between 1 and 100
-            if (currentCount < 1) {
-                currentCount = 1;
-            } else if (currentCount > 100) {
-                currentCount = 100;
-            }
-
-            passengerCountInput.value = currentCount;
-        }
-    </script>
 </body>
 </html>

@@ -6,21 +6,59 @@
     <title>test</title>
 </head>
 <body>
-    <label for="passengers">탐승객 수</label>
-    <select id="passengers" name="passengers" required>
-        <option value="1">1명</option>
-        <option value="1">2명</option>
-        <option value="1">3명</option>
-        <option value="1">4명</option>
-        <option value="1">5명</option>
-    </select>
-
-    <label for="passengers">탑승객 수</label>
-        <div class="passenger-controls">
-            <button type="button" onclick="changePassengerCount(-1)">-</button>
-            <input type="number" id="passenger-count" class="passenger-count" name="passengers" value="1" min="1" max="100" readonly>
-            <button type="button" onclick="changePassengerCount(1)">+</button>
+    <div class="search-box">
+        <div class="tab-options">
+            <label>
+                <input type="radio" name="trip" checked> One way
+            </label>
+            <label>
+                <input type="radio" name="trip"> Round-trip
+            </label>
+            <label>
+                <input type="radio" name="trip"> Multi-city
+            </label>
         </div>
+    
+        <div class="search-form">
+            <div class="input-group">
+                <label for="flying-from">Flying from</label>
+                <input type="text" id="flying-from" placeholder="City or airport">
+            </div>
+    
+            <div class="input-group">
+                <label for="flying-to">Flying to</label>
+                <input type="text" id="flying-to" placeholder="City or airport">
+            </div>
+    
+            <div class="input-group">
+                <label for="departing">Departing</label>
+                <input type="date" id="departing" value="2024-10-18">
+            </div>
+    
+            <div class="input-group">
+                <label for="passengers">Passengers</label>
+                <select id="passengers">
+                    <option value="1">1 Adult - 0 Child</option>
+                    <option value="2">2 Adults - 1 Child</option>
+                    <option value="3">3 Adults - 2 Children</option>
+                </select>
+            </div>
+    
+            <div class="input-group">
+                <label for="coach">Coach</label>
+                <select id="coach">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first-class">First Class</option>
+                </select>
+            </div>
+    
+            <div class="input-group">
+                <button type="button" class="search-btn">Search Now</button>
+            </div>
+        </div>
+    </div>
+    
 
 </body>
 </html>
