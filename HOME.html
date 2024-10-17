@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="wrapper.css">
-    <link rel="stylesheet" href="wrapper1.css">
+    <link rel="stylesheet" href="Number of Passengers.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="HOME_language.js"></script>
 
@@ -100,6 +100,12 @@
                             <option value="Infants on lap">Infants on lap</option>
                         </select>
                     </div>
+                    <!-- <label for="passengers">Number of Passengers</label> -->
+                    <div class="passenger-controls">
+                        <button type="button" onclick="changePassengerCount(-1)">-</button>
+                        <input type="number" id="passenger-count" class="passenger-count" name="passengers" value="1" min="1" max="100" readonly>
+                        <button type="button" onclick="changePassengerCount(1)">+</button>
+                    </div>
                 </div>
                 <div class="Economy">
                     <div class="select-wrapper2">
@@ -112,42 +118,25 @@
                         </select>
                     </div>
                 </div>
-                    </div>
-                    <!-- 검색창 -->
-                    <div class="content">
-                        <div class="search">
-                            <i class="uil uil-search"></i>
-                            <input spellcheck="false" type="text" placeholder="search">
-                        </div>
-                        <ul class="options">
-                        </ul>
-                    </div>
-                </div>
-                <div class="Trip-image">
-                    <img src="Icon_image/recurrent_16975453.png" style="width: 30px; height: 30px;">
-                </div>
-                <!-- 두 번째 드롭다운 메뉴 -->
-                <div class="dropdown-wrapper">
-                    <div class="dropdown-select-btn">
-                        <span>coming from</span>
-                        <i class="uil uil-angle-down"></i>
-                    </div>
-                    <!-- 검색창 -->
-                    <div class="dropdown-content">
-                        <div class="dropdown-search">
-                            <i class="uil uil-search"></i>
-                            <input spellcheck="false" type="text" placeholder="search">
-                        </div>
-                        <ul class="dropdown-options">
-                        </ul>
-                    </div>
-                </div>  
             </div>
         </div>
-    
-    <script src="script1.js"></script>
-    <script src="script.js"></script>
     <script src="main.js"></script>
+    
+    <script>
+        function changePassengerCount(amount) {
+            const passengerCountInput = document.getElementById('passenger-count');
+            let currentCount = parseInt(passengerCountInput.value);
+            currentCount += amount;
 
+            // Ensure the count is between 1 and 100
+            if (currentCount < 1) {
+                currentCount = 1;
+            } else if (currentCount > 100) {
+                currentCount = 100;
+            }
+
+            passengerCountInput.value = currentCount;
+        }
+    </script>
 </body>
 </html>

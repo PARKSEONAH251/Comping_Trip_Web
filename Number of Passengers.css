@@ -1,0 +1,55 @@
+/* 부모 컨테이너를 flex로 설정하여 아이템을 한 줄에 배치 */
+.Adult {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 공간을 고르게 분배 */
+    gap: 20px; /* 요소들 간 간격 */
+}
+
+/* select-wrapper1: select 요소와 아이콘의 그룹을 제어 */
+.select-wrapper1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* passenger-controls: 탑승객 수 컨트롤 영역 */
+.passenger-controls {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* 버튼과 입력 필드 사이 간격 */
+}
+
+/* 탑승객 수 input 크기 조정 */
+.passenger-count {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none;             /* 외각선 없애기 */
+    outline: none;            /* 포커스 시 생기는 테두리 없애기 */
+    background-color: #ffffff; /* 배경색 변경 (선택사항) */
+    font-size: 16px;          /* 텍스트 크기 */
+    padding: 0;               /* 여백 없애기 */
+    box-sizing: border-box;   /* 패딩과 테두리를 포함한 크기 계산 */
+}
+
+/* 원형 플러스/마이너스 버튼 */
+.passenger-controls button {
+    width: 25px;       /* 버튼의 너비 */
+    height: 25px;      /* 버튼의 높이 (같은 값으로 설정하여 원형을 만듦) */
+    /* border-radius: 50%; 원형으로 만듦 */
+    border: 1px solid #ccc; /* 경계선 */
+    background-color: #f0f0f0; /* 버튼 배경색 */
+    color: #333; /* 버튼 텍스트 색 */
+    font-size: 20px; /* 텍스트 크기 */
+    cursor: pointer; /* 커서 모양 */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 텍스트 중앙 정렬 */
+    transition: background-color 0.3s; /* 배경색 전환 애니메이션 */
+}
+
+/* 버튼에 마우스를 올렸을 때 색상 변경 */
+.passenger-controls button:hover {
+    background-color: #ddd;
+}

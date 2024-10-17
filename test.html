@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <label for="passengers">탐승객 수</label>
+    <select id="passengers" name="passengers" required>
+        <option value="1">1명</option>
+        <option value="1">2명</option>
+        <option value="1">3명</option>
+        <option value="1">4명</option>
+        <option value="1">5명</option>
+    </select>
+
+    <label for="passengers">탑승객 수</label>
+        <div class="passenger-controls">
+            <button type="button" onclick="changePassengerCount(-1)">-</button>
+            <input type="number" id="passenger-count" class="passenger-count" name="passengers" value="1" min="1" max="100" readonly>
+            <button type="button" onclick="changePassengerCount(1)">+</button>
+        </div>
+
+</body>
+</html>
