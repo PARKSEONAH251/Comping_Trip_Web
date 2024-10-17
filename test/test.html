@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
+    <title>test</title>
+</head>
+<body>
+    <div class="passenger-dropdown">
+        <label for="passenger-toggle">Passengers</label>
+        <div class="dropdown-toggle" id="passenger-toggle" onclick="toggleDropdown()">
+            <span id="passenger-summary">0 Adult - 0 Child</span>
+        </div>
+    
+        <div class="dropdown-menu" id="passenger-menu">
+            <div class="passenger-item">
+                <span>Adults</span>
+                <div class="passenger-controls">
+                    <button type="button" onclick="updatePassengerCount('adult', -1)">-</button>
+                    <span id="adult-count">0</span>
+                    <button type="button" onclick="updatePassengerCount('adult', 1)">+</button>
+                </div>
+            </div>
+    
+            <div class="passenger-item">
+                <span>Children</span>
+                <div class="passenger-controls">
+                    <button type="button" onclick="updatePassengerCount('children', -1)">-</button>
+                    <span id="children-count">0</span>
+                    <button type="button" onclick="updatePassengerCount('children', 1)">+</button>
+                </div>
+            </div>
+    
+            <div class="passenger-item">
+                <span>Infants</span>
+                <div class="passenger-controls">
+                    <button type="button" onclick="updatePassengerCount('infant', -1)">-</button>
+                    <span id="infant-count">0</span>
+                    <button type="button" onclick="updatePassengerCount('infant', 1)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
