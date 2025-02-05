@@ -207,4 +207,29 @@ li{
     justify-content: left;
 }
 
+.airport_flyingfrom{
+    position: relative;
+    display: inline-block;
+    right: 280px;
+    bottom: 20px;
+}
+
+.airport_flyingfrom ::before{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.from_icon{
+    padding-left: 35px;
+    height: 40px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
 
