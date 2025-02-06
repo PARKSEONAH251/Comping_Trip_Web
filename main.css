@@ -39,63 +39,9 @@ li{
 /* 네비게이션 바 CSS */
 #main-navigation {
     display: flex; /* 네비게이션 바가 가능한 한 많은 공간을 차지하도록 설정 */
-    justify-content: space-between; /* 공간을 나누어 양쪽 끝에 배치 */
+    justify-content: right; 
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff; /* 로고와 네비게이션 사이 여백 설정 */
-}
-
-.left-navi {
-    display: flex;
-    justify-content: left; /* 메뉴 항목을 왼쪽 정렬 */
-}
-
-.outer-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    transition: transform 0.5s ease; /* transform 속성에 대한 전환 효과 설정 */
-}
-
-.outer-menu-item {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.outer-menu-link {
-    color: #333; /* 텍스트 색상 변경 */
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
-    text-align: center; /* 텍스트를 중앙 정렬 */
-    position: relative; /* position 속성 추가 */
-}
-
-.spread-underline {
-    color: #333;
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px 0;
-    position: relative;
-}
-
-.spread-underline:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #ffb000;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.spread-underline:hover:after {
-    width: 100%;
-    left: 0;
 }
 
 
@@ -120,21 +66,6 @@ li{
     justify-content: flex-end;
     margin-bottom: 10px; /* 버튼과 다음 요소 간의 간격 조절 */
 }
-
-.singin {
-    margin-left: auto; /* singin 버튼을 오른쪽 끝으로 이동 */
-}
-
-.singin-Button, .singup-Button {
-    width: 100px;
-    height: 45px;
-    color: #fff;
-    background-color: #E9A916;
-    border-radius: 10px;
-    border: none;
-    margin-left: 10px; /* 버튼 간격 조절 */
-}
-
 
 /* 언어.css */
 .language-select {
@@ -206,30 +137,4 @@ li{
     align-items: center;
     justify-content: left;
 }
-
-.airport_flyingfrom{
-    position: relative;
-    display: inline-block;
-    right: 280px;
-    bottom: 20px;
-}
-
-.airport_flyingfrom ::before{
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.from_icon{
-    padding-left: 35px;
-    height: 40px;
-    width: 260px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-}
-
 
