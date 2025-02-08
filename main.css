@@ -4,12 +4,6 @@
     padding: 0;
     font-family: Verdana, Arial, 'Courier New', Georgia, 'Times New Roman', 'Trebuchet MS';
 }
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none;
-}
 
 .header {
     display: flex;
@@ -18,32 +12,6 @@ li{
     padding: 10px 20px;
     background-color: #fff;
 }
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.logo-button img {
-    max-width: 100%; /* 로고 이미지 최대 너비 설정 */
-    height: auto; /* 이미지 높이 자동으로 조정 */
-}
-
-/* 네비게이션 바 CSS */
-#main-navigation {
-    display: flex; /* 네비게이션 바가 가능한 한 많은 공간을 차지하도록 설정 */
-    justify-content: right; 
-    align-items: center;
-    padding: 10px 20px;
-}
-
 
 /* 미디어 쿼리: 화면 크기가 작아질 때 적용될 스타일 */
 @media (max-width: 768px) {
