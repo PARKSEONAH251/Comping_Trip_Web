@@ -1,3 +1,18 @@
+.Name1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+
+.Name2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+
+.Name3{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+
 .radio-container{
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
@@ -6,7 +21,7 @@
     align-items: center;
     cursor: pointer;
     margin-bottom: 10px;
-    margin: 10px;
+    margin: 20px;
     top: -110px;
     left: 40px;
 
