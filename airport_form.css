@@ -1,7 +1,7 @@
 .airport_flyingfrom{
     position: relative;
     display: inline-block;
-    right: 220px;
+    right: 240px;
     bottom: 20px;
 }
 
@@ -14,8 +14,8 @@
 
 .from_icon{
     padding-left: 35px;
-    height: 40px;
-    width: 280px;
+    height: 60px;
+    width: 310px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
@@ -25,6 +25,7 @@
 .airport_flyingto{
     position: relative;
     display: inline-block;
+    padding: 60px;
     right: 220px;
     bottom: 20px;
 }
@@ -38,8 +39,8 @@
 
 .to_icon {
     padding-left: 35px;
-    height: 40px;
-    width: 280px;
+    height: 60px;
+    width: 310px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
