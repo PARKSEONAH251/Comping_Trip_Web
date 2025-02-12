@@ -1,7 +1,15 @@
+.airport_FONT1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+.airport_FONT2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
 .airport_flyingfrom{
     position: relative;
     display: inline-block;
-    right: 240px;
+    right: 305px;
     bottom: 20px;
 }
 
@@ -15,7 +23,7 @@
 .from_icon{
     padding-left: 35px;
     height: 60px;
-    width: 310px;
+    width: 370px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
@@ -26,7 +34,7 @@
     position: relative;
     display: inline-block;
     padding: 60px;
-    right: 220px;
+    right: 300px;
     bottom: 20px;
 }
 
@@ -40,7 +48,7 @@
 .to_icon {
     padding-left: 35px;
     height: 60px;
-    width: 310px;
+    width: 370px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
